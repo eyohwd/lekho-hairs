@@ -1,0 +1,473 @@
+/* ----BASIC-SETUP ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+html {
+    background-color: #f4f4f4;
+    color: #575757;
+    font-family: 'lato', 'helvetica', 'sans-serif', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    }
+
+.clearfix {zoom: 1;}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
+
+/* ----HOW IT WORKS---- */
+
+.section-steps {
+    background-color:
+}
+
+/* --- REUSABLE--- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}  
+
+.section-feature {
+    padding: 80px 0;
+    
+}
+
+.section-hair {
+    padding: 200px 0 60px 0;
+}
+
+
+
+.box {
+    padding: 1px;
+}
+
+/* ---- HEADER -----*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/images-20.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ----- HEADINGS ---- */
+h1, h2, h3 {
+    
+    
+    text-transform: uppercase;
+    font-weight: 300;
+    
+    
+}
+
+
+h1 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    
+    }
+
+h2 {
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 180%;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:#fd5516;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 90%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.box p {
+    line-height: 120%;
+    font-size: 80%;
+}
+
+/* ----- PARAGRAPHS ---- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* ----ICONS---- */
+.icon-big {
+    font-size: 300%;
+    display: block;
+    margin-bottom: 10px;
+    color: #fd5516; 
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #fd5516; 
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* ---secret to align icon to text--- */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----LINKS---- */
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fd5516;
+    border-bottom: 1px solid #fd5516;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    }
+
+ /* ------BUTTONS----- */
+
+.btn {
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.btn-full{
+    color: #fff;
+    background-color: #fd5516;
+    margin-right: 40px;
+    }
+
+.btn-ghost {
+    border: 1px solid #fd5516; 
+    color: #fd5516;
+} 
+
+.btn-full:hover {
+    background-color: #d15000;
+    border: 1px solid #d15000;
+}
+
+.btn-ghost:hover {
+    color: #fff;
+    background-color: #d15000;
+    border: 1px solid #d15000;
+}
+
+/* ----MAIN-NAV and LOGO---- */
+
+.logo {
+    height: 120px;
+    width: 140px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+        
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fd5516;
+    
+    
+}
+
+/* -----FEATURES----- */
+
+.section-feature .long-copy {
+    margin-bottom: 40px;
+}
+
+
+/* ----- HAIRS ------ */
+
+.section-hair {
+margin: 0;
+}
+
+.hair-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.hair-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.hair-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hair-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.hair-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/* ----HOW IT WORKS---- */
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-steps {
+    margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 50px;
+}
+
+.work-steps div {
+    color: #fd5516;
+    border: 2px solid #fd5516;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.work-steps p {
+    padding-top: 4px;
+}
+
+.button-app:link,
+.button-app:visited {
+    border: 0;
+}
+
+.button-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+.section-cities {
+    clear: both;
+    padding-top: 40px;
+}
+
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+.section-testimonials {
+    clear: both;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/images-24.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+
+
+.test {
+    padding-top: 50px;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+blockquote:before {
+    content: "\201c";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+
+.section-plan {
+    background-color: ;
+}
+
+.bg {
+    background-color: #fff;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+    font-size: 200
+        ;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #fd5516; 
+}
+
+.plan-price-hair {
+    font-size: 80%;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+
+
+
+
